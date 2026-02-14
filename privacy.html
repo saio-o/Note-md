@@ -1,0 +1,200 @@
+<!-- privacy.html : Note.md プライバシーポリシー -->
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Note.md プライバシーポリシー</title>
+  <meta name="description" content="iOSアプリ Note.md のプライバシーポリシーです。" />
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji"; line-height: 1.75; margin: 0; }
+    header, main, footer { max-width: 920px; margin: 0 auto; padding: 24px; }
+    header { padding-top: 40px; padding-bottom: 12px; }
+    h1 { font-size: 1.9rem; margin: 0 0 8px; }
+    .meta { opacity: .8; margin: 0; }
+    nav { border: 1px solid rgba(127,127,127,.25); border-radius: 14px; padding: 14px 16px; margin: 18px 0 28px; }
+    nav a { text-decoration: none; }
+    nav ul { margin: 10px 0 0; padding-left: 18px; }
+    h2 { font-size: 1.25rem; margin-top: 34px; padding-top: 8px; border-top: 1px solid rgba(127,127,127,.25); }
+    h3 { font-size: 1.05rem; margin-top: 22px; }
+    code { padding: 0 .25em; border: 1px solid rgba(127,127,127,.25); border-radius: 8px; }
+    .card { border: 1px solid rgba(127,127,127,.25); border-radius: 14px; padding: 14px 16px; margin: 14px 0; }
+    .small { font-size: .95rem; opacity: .9; }
+    footer { opacity: .85; padding-top: 8px; padding-bottom: 44px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0 4px; }
+    th, td { border-bottom: 1px solid rgba(127,127,127,.25); padding: 10px 8px; vertical-align: top; text-align: left; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Note.md プライバシーポリシー</h1>
+    <p class="meta">最終更新日：2026-02-14</p>
+    <div class="card small">
+      <div><strong>事業者（運営者）</strong>：noa</div>
+      <div><strong>連絡先</strong>：flickcounter@gmail.com</div>
+    </div>
+
+    <nav aria-label="目次">
+      <strong>目次</strong>
+      <ul>
+        <li><a href="#p1">1. はじめに</a></li>
+        <li><a href="#p2">2. 取得する情報</a></li>
+        <li><a href="#p3">3. 利用目的</a></li>
+        <li><a href="#p4">4. 第三者提供</a></li>
+        <li><a href="#p5">5. 外部送信・外部リンク・外部サービス</a></li>
+        <li><a href="#p6">6. 保存期間</a></li>
+        <li><a href="#p7">7. ユーザーの選択と管理（削除・権利）</a></li>
+        <li><a href="#p8">8. 安全管理措置</a></li>
+        <li><a href="#p9">9. 未成年者の情報</a></li>
+        <li><a href="#p10">10. 改定</a></li>
+        <li><a href="#p11">11. お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="p1">1. はじめに</h2>
+    <p>
+      本ポリシーは、iOSアプリ「Note.md」（以下「本アプリ」）における、ユーザー情報の取扱いを定めるものです。
+      本アプリは、Markdownの作成・編集・プレビュー表示を主目的とし、ユーザーが選択したファイル／フォルダ（Files等）を端末上で扱います。
+    </p>
+
+    <div class="card">
+      <strong>要点（概要）</strong>
+      <ul>
+        <li>本アプリは、運営者のサーバーへユーザーコンテンツを送信することを前提としていません。</li>
+        <li>作業復元のため、開いていたタブや未保存の編集内容などの「セッション情報」を端末内に保存する場合があります。</li>
+        <li>Markdown内に外部画像URL（http/https）を含む場合、画像ホストへ通信が発生し得ます。</li>
+        <li>外部リンクはSafariで開かれ、外部サイトのポリシーが適用されます。</li>
+      </ul>
+    </div>
+
+    <h2 id="p2">2. 取得する情報</h2>
+    <p>本アプリが扱う情報は、概ね次のとおりです。</p>
+
+    <h3>2.1 ユーザーが本アプリに入力・選択する情報（ユーザーコンテンツ等）</h3>
+    <table aria-label="取得する情報の一覧">
+      <thead>
+        <tr>
+          <th>情報の例</th>
+          <th>具体例</th>
+          <th>取得・保存の場所</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>テキスト（Markdown等）</td>
+          <td>メモ本文、見出し、コード、リンク等</td>
+          <td>ユーザーが選択した保存先（Files / iCloud Drive 等）または端末内（セッション復元用）</td>
+        </tr>
+        <tr>
+          <td>ファイル／フォルダ情報</td>
+          <td>ファイル名、拡張子、URL（パス）等</td>
+          <td>端末内（セッション復元・ワークスペース再オープン等のため）</td>
+        </tr>
+        <tr>
+          <td>設定情報</td>
+          <td>表示モード、フォントサイズ等</td>
+          <td>端末内（UserDefaults 等）</td>
+        </tr>
+        <tr>
+          <td>権限（ブックマーク）情報</td>
+          <td>ユーザーが許可したフォルダ／ファイルへのアクセス権（security-scoped bookmark）</td>
+          <td>端末内（UserDefaults 等）</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>2.2 自動的に収集しない情報</h3>
+    <p>
+      本アプリは、運営者が独自にユーザーを追跡するための広告ID、解析SDK、行動ターラッキング等の導入を前提としていません。
+      ただし、App Store / iOS などプラットフォーム提供者（Apple Inc.）が、OSやストアの仕組みとして情報を取り扱う場合があります（詳細はAppleのプライバシー情報をご確認ください）。
+    </p>
+
+    <h2 id="p3">3. 利用目的</h2>
+    <p>本アプリは、取得した情報を以下の目的で利用します。</p>
+    <ul>
+      <li>Markdownの作成・編集・プレビュー表示、ファイル操作（作成/保存/読み込み/名称変更 等）の提供</li>
+      <li>ワークスペース（フォルダ）や最近の作業状態の復元（開いていたタブ、未保存編集の復元等）</li>
+      <li>設定（外観・フォント等）の保持</li>
+      <li>ユーザーからの問い合わせ対応（ユーザーが提供した範囲の情報に限る）</li>
+    </ul>
+
+    <h2 id="p4">4. 第三者提供</h2>
+    <p>
+      運営者は、ユーザーコンテンツを運営者のサーバーに送信して第三者へ提供することを目的としていません。
+      ただし、法令に基づく開示要請がある場合、または人の生命・身体・財産の保護のために必要がある場合など、法令上許容される範囲で開示することがあります。
+    </p>
+
+    <h2 id="p5">5. 外部送信・外部リンク・外部サービス</h2>
+
+    <h3>5.1 外部リンク（Safariで開く）</h3>
+    <p>
+      本アプリ内のリンクをタップすると、Safari等の外部ブラウザで外部サイトを開く場合があります。
+      外部サイトでは、外部サイト運営者のプライバシーポリシーが適用されます。
+    </p>
+
+    <h3>5.2 外部画像URL（http/https）</h3>
+    <p>
+      Markdown内に外部画像URL（<code>http</code>/<code>https</code>）が含まれる場合、プレビュー表示時に画像ホストへ通信が発生し得ます。
+      この通信により、外部サイト側でIPアドレスやユーザーエージェント等が取得される可能性があります。
+      外部画像の利用可否は、ユーザーがMarkdown内容を編集して制御できます。
+    </p>
+
+    <h3>5.3 Files / iCloud Drive 等の保存先サービス</h3>
+    <p>
+      本アプリは、ユーザーが選択した保存先（Files、iCloud Drive、外部プロバイダ等）を通じてファイルを読み書きします。
+      保存先サービスの同期・共有・バックアップ・暗号化・障害対応等は、当該サービス提供者の仕様に従います。
+    </p>
+
+    <h2 id="p6">6. 保存期間</h2>
+    <ul>
+      <li>ユーザーコンテンツ：ユーザーが選択した保存先に保存されます。保存期間は保存先の設定に従います。</li>
+      <li>セッション情報（復元用データ）：ユーザーがアプリを利用する間、端末内に保存される場合があります。アプリ削除により端末内データは削除されます。</li>
+      <li>設定情報・ブックマーク（権限）情報：端末内に保存され、アプリ削除により削除されます。</li>
+    </ul>
+
+    <h2 id="p7">7. ユーザーの選択と管理（削除・権利）</h2>
+    <ul>
+      <li>保存先（Files / iCloud Drive 等）のデータは、ユーザーが保存先側で削除・移動・管理できます。</li>
+      <li>端末内に保存されるセッション情報・設定情報等は、アプリのアンインストール（削除）で削除されます。</li>
+      <li>外部画像や外部リンクの通信は、Markdown内容から当該URLを削除することで抑制できます。</li>
+    </ul>
+
+    <h2 id="p8">8. 安全管理措置</h2>
+    <p>
+      運営者は、端末内データの保護について、iOSのサンドボックス等のプラットフォーム標準のセキュリティ機構を前提に設計しています。
+      ただし、あらゆる脅威からの完全な安全を保証するものではありません。重要なデータは、ユーザー自身でバックアップ等を行ってください。
+    </p>
+
+    <h2 id="p9">9. 未成年者の情報</h2>
+    <p>
+      未成年者は、親権者その他の法定代理人の同意を得たうえで本アプリを利用してください。
+    </p>
+
+    <h2 id="p10">10. 改定</h2>
+    <p>
+      運営者は、必要に応じて本ポリシーを改定できます。改定後の内容は、運営者が適切と判断する方法（例：Web掲載）により周知します。
+    </p>
+
+    <h2 id="p11">11. お問い合わせ</h2>
+    <p>
+      本ポリシーに関するお問い合わせは、上記の窓口までご連絡ください。<br />
+    </p>
+
+    <div class="card small">
+      <strong>公開前チェック（推奨）</strong>
+      <ul>
+        <li>運営者名・連絡先を実在のものに差し替えたか</li>
+        <li>課金（IAP/サブスク）や解析SDKを導入予定なら、その内容を追記したか</li>
+        <li>App Store Connect の「プライバシー」申告内容と整合しているか</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div>©noa</div>
+  </footer>
+</body>
+</html>
