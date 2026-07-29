@@ -1,200 +1,127 @@
-<!-- privacy.html : Note.md プライバシーポリシー -->
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Note.md プライバシーポリシー</title>
-  <meta name="description" content="iOSアプリ Note.md のプライバシーポリシーです。" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Note.md Privacy Policy / プライバシーポリシー</title>
   <style>
-    :root { color-scheme: light dark; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji"; line-height: 1.75; margin: 0; }
-    header, main, footer { max-width: 920px; margin: 0 auto; padding: 24px; }
-    header { padding-top: 40px; padding-bottom: 12px; }
-    h1 { font-size: 1.9rem; margin: 0 0 8px; }
-    .meta { opacity: .8; margin: 0; }
-    nav { border: 1px solid rgba(127,127,127,.25); border-radius: 14px; padding: 14px 16px; margin: 18px 0 28px; }
-    nav a { text-decoration: none; }
-    nav ul { margin: 10px 0 0; padding-left: 18px; }
-    h2 { font-size: 1.25rem; margin-top: 34px; padding-top: 8px; border-top: 1px solid rgba(127,127,127,.25); }
-    h3 { font-size: 1.05rem; margin-top: 22px; }
-    code { padding: 0 .25em; border: 1px solid rgba(127,127,127,.25); border-radius: 8px; }
-    .card { border: 1px solid rgba(127,127,127,.25); border-radius: 14px; padding: 14px 16px; margin: 14px 0; }
-    .small { font-size: .95rem; opacity: .9; }
-    footer { opacity: .85; padding-top: 8px; padding-bottom: 44px; }
-    table { width: 100%; border-collapse: collapse; margin: 10px 0 4px; }
-    th, td { border-bottom: 1px solid rgba(127,127,127,.25); padding: 10px 8px; vertical-align: top; text-align: left; }
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; color: #17202a; background: #f6f7f9; }
+    body { margin: 0; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 22px 80px; }
+    article { background: Canvas; color: CanvasText; border: 1px solid color-mix(in srgb, CanvasText 12%, transparent); border-radius: 20px; padding: clamp(22px, 5vw, 44px); box-shadow: 0 14px 40px rgba(0,0,0,.07); }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.2; margin: 0 0 8px; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    h3 { font-size: 1rem; margin-top: 1.5rem; }
+    p, li { max-width: 68ch; }
+    .meta, .note { color: color-mix(in srgb, CanvasText 64%, transparent); }
+    .lang { display: flex; gap: 12px; margin: 18px 0 30px; }
+    a { color: LinkText; }
+    hr { border: 0; border-top: 1px solid color-mix(in srgb, CanvasText 14%, transparent); margin: 42px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: .94rem; }
+    th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid color-mix(in srgb, CanvasText 12%, transparent); }
+    @media (max-width: 560px) { table, tbody, tr, th, td { display: block; } th { padding-bottom: 0; border: 0; } td { padding-top: 2px; } }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Note.md プライバシーポリシー</h1>
-    <p class="meta">最終更新日：2026-02-14</p>
-    <div class="card small">
-      <div><strong>事業者（運営者）</strong>：noa</div>
-      <div><strong>連絡先</strong>：flickcounter@gmail.com</div>
-    </div>
+<main><article>
+  <h1>Note.md プライバシーポリシー</h1>
+  <p class="meta">適用日・最終更新日: 2026年7月22日</p>
+  <nav class="lang"><a href="#ja">日本語</a><a href="#en">English</a></nav>
 
-    <nav aria-label="目次">
-      <strong>目次</strong>
-      <ul>
-        <li><a href="#p1">1. はじめに</a></li>
-        <li><a href="#p2">2. 取得する情報</a></li>
-        <li><a href="#p3">3. 利用目的</a></li>
-        <li><a href="#p4">4. 第三者提供</a></li>
-        <li><a href="#p5">5. 外部送信・外部リンク・外部サービス</a></li>
-        <li><a href="#p6">6. 保存期間</a></li>
-        <li><a href="#p7">7. ユーザーの選択と管理（削除・権利）</a></li>
-        <li><a href="#p8">8. 安全管理措置</a></li>
-        <li><a href="#p9">9. 未成年者の情報</a></li>
-        <li><a href="#p10">10. 改定</a></li>
-        <li><a href="#p11">11. お問い合わせ</a></li>
-      </ul>
-    </nav>
-  </header>
+  <section id="ja" lang="ja">
+    <p>Note.mdは、Markdown、テキスト、利用者が選択した画像・動画を端末中心で扱うiPhone・iPadアプリです。アカウント登録は不要です。文書、画像、動画、録音、文字起こし、文書メモを、開発者のサーバーや外部解析サービスへ送信しません。</p>
 
-  <main>
-    <h2 id="p1">1. はじめに</h2>
-    <p>
-      本ポリシーは、iOSアプリ「Note.md」（以下「本アプリ」）における、ユーザー情報の取扱いを定めるものです。
-      本アプリは、Markdownの作成・編集・プレビュー表示を主目的とし、ユーザーが選択したファイル／フォルダ（Files等）を端末上で扱います。
-    </p>
-
-    <div class="card">
-      <strong>要点（概要）</strong>
-      <ul>
-        <li>本アプリは、運営者のサーバーへユーザーコンテンツを送信することを前提としていません。</li>
-        <li>作業復元のため、開いていたタブや未保存の編集内容などの「セッション情報」を端末内に保存する場合があります。</li>
-        <li>Markdown内に外部画像URL（http/https）を含む場合、画像ホストへ通信が発生し得ます。</li>
-        <li>外部リンクはSafariで開かれ、外部サイトのポリシーが適用されます。</li>
-      </ul>
-    </div>
-
-    <h2 id="p2">2. 取得する情報</h2>
-    <p>本アプリが扱う情報は、概ね次のとおりです。</p>
-
-    <h3>2.1 ユーザーが本アプリに入力・選択する情報（ユーザーコンテンツ等）</h3>
-    <table aria-label="取得する情報の一覧">
-      <thead>
-        <tr>
-          <th>情報の例</th>
-          <th>具体例</th>
-          <th>取得・保存の場所</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>テキスト（Markdown等）</td>
-          <td>メモ本文、見出し、コード、リンク等</td>
-          <td>ユーザーが選択した保存先（Files / iCloud Drive 等）または端末内（セッション復元用）</td>
-        </tr>
-        <tr>
-          <td>ファイル／フォルダ情報</td>
-          <td>ファイル名、拡張子、URL（パス）等</td>
-          <td>端末内（セッション復元・ワークスペース再オープン等のため）</td>
-        </tr>
-        <tr>
-          <td>設定情報</td>
-          <td>表示モード、フォントサイズ等</td>
-          <td>端末内（UserDefaults 等）</td>
-        </tr>
-        <tr>
-          <td>権限（ブックマーク）情報</td>
-          <td>ユーザーが許可したフォルダ／ファイルへのアクセス権（security-scoped bookmark）</td>
-          <td>端末内（UserDefaults 等）</td>
-        </tr>
-      </tbody>
+    <h2>1. アプリが扱うデータ</h2>
+    <table>
+      <tr><th>文書</th><td>利用者が選択したFilesの場所、またはアプリの端末内領域で扱います。</td></tr>
+      <tr><th>画像・動画</th><td>システムの写真ピッカーで利用者が選んだ項目だけを受け取り、Markdownと同じ階層の「文書名-assets」フォルダへコピーします。写真ライブラリ全体へのアクセスは要求しません。ローカル動画はアプリ内で再生します。</td></tr>
+      <tr><th>Inbox・読むリスト・文書メモ・設定</th><td>アプリの端末内領域または、ホストアプリと共有拡張だけが利用するApp Group領域に保存します。</td></tr>
+      <tr><th>録音・文字起こし</th><td>アプリの端末内領域に保存します。文字起こしは対応するAppleの端末内フレームワークで処理します。</td></tr>
+      <tr><th>Pro購入状態</th><td>AppleのStoreKitで購入・復元を確認し、利用権の有無を端末内にキャッシュします。決済情報はAppleが処理します。</td></tr>
     </table>
 
-    <h3>2.2 自動的に収集しない情報</h3>
-    <p>
-      本アプリは、運営者が独自にユーザーを追跡するための広告ID、解析SDK、行動ターラッキング等の導入を前提としていません。
-      ただし、App Store / iOS などプラットフォーム提供者（Apple Inc.）が、OSやストアの仕組みとして情報を取り扱う場合があります（詳細はAppleのプライバシー情報をご確認ください）。
-    </p>
+    <h2>2. 収集・追跡・広告</h2>
+    <p>Note.mdは、広告SDK、第三者分析SDK、行動追跡SDKを含みません。開発者は、アプリを通じて個人情報、文書内容、画像、動画、録音、文字起こし、利用履歴を収集しません。広告を表示せず、データを第三者へ販売しません。</p>
 
-    <h2 id="p3">3. 利用目的</h2>
-    <p>本アプリは、取得した情報を以下の目的で利用します。</p>
+    <h2>3. 通信が発生する場合</h2>
     <ul>
-      <li>Markdownの作成・編集・プレビュー表示、ファイル操作（作成/保存/読み込み/名称変更 等）の提供</li>
-      <li>ワークスペース（フォルダ）や最近の作業状態の復元（開いていたタブ、未保存編集の復元等）</li>
-      <li>設定（外観・フォント等）の保持</li>
-      <li>ユーザーからの問い合わせ対応（ユーザーが提供した範囲の情報に限る）</li>
+      <li>Proの商品情報、購入、購入の復元では、StoreKitを通じてAppleと通信します。</li>
+      <li>録音・文字起こしの初回利用時などに、選択した言語のモデルをAppleから取得する場合があります。</li>
+      <li>iCloud写真にのみ保存されている画像・動画を選ぶと、システムの写真ピッカーがAppleのサービスから項目を取得する場合があります。開発者はその通信内容を受け取りません。</li>
+      <li>MarkdownプレビューはWeb上の画像や動画サムネイルを自動取得せず、YouTube等の外部動画をアプリ内へ埋め込みません。利用者がリンクを明示的に開くと、YouTube等の外部アプリまたはSafariへ移動し、遷移先へ通信します。</li>
+      <li>利用者がサポートメールを送信すると、メールサービス提供者と開発者がその内容を受け取ります。アプリから自動送信はしません。</li>
     </ul>
+    <p class="note">Appleや遷移先Webサイトによるデータ処理には、それぞれのプライバシーポリシーが適用されます。</p>
 
-    <h2 id="p4">4. 第三者提供</h2>
-    <p>
-      運営者は、ユーザーコンテンツを運営者のサーバーに送信して第三者へ提供することを目的としていません。
-      ただし、法令に基づく開示要請がある場合、または人の生命・身体・財産の保護のために必要がある場合など、法令上許容される範囲で開示することがあります。
-    </p>
-
-    <h2 id="p5">5. 外部送信・外部リンク・外部サービス</h2>
-
-    <h3>5.1 外部リンク（Safariで開く）</h3>
-    <p>
-      本アプリ内のリンクをタップすると、Safari等の外部ブラウザで外部サイトを開く場合があります。
-      外部サイトでは、外部サイト運営者のプライバシーポリシーが適用されます。
-    </p>
-
-    <h3>5.2 外部画像URL（http/https）</h3>
-    <p>
-      Markdown内に外部画像URL（<code>http</code>/<code>https</code>）が含まれる場合、プレビュー表示時に画像ホストへ通信が発生し得ます。
-      この通信により、外部サイト側でIPアドレスやユーザーエージェント等が取得される可能性があります。
-      外部画像の利用可否は、ユーザーがMarkdown内容を編集して制御できます。
-    </p>
-
-    <h3>5.3 Files / iCloud Drive 等の保存先サービス</h3>
-    <p>
-      本アプリは、ユーザーが選択した保存先（Files、iCloud Drive、外部プロバイダ等）を通じてファイルを読み書きします。
-      保存先サービスの同期・共有・バックアップ・暗号化・障害対応等は、当該サービス提供者の仕様に従います。
-    </p>
-
-    <h2 id="p6">6. 保存期間</h2>
+    <h2>4. 権限</h2>
     <ul>
-      <li>ユーザーコンテンツ：ユーザーが選択した保存先に保存されます。保存期間は保存先の設定に従います。</li>
-      <li>セッション情報（復元用データ）：ユーザーがアプリを利用する間、端末内に保存される場合があります。アプリ削除により端末内データは削除されます。</li>
-      <li>設定情報・ブックマーク（権限）情報：端末内に保存され、アプリ削除により削除されます。</li>
+      <li><strong>マイク:</strong> 録音に使用します。</li>
+      <li><strong>音声認識:</strong> 対応環境で文字起こしに使用します。</li>
+      <li><strong>Files:</strong> 利用者が選んだ文書やフォルダを開く・保存するために使用します。</li>
+      <li><strong>写真ピッカー:</strong> 利用者が明示的に選んだ画像・動画だけを取り込むために使用します。写真ライブラリ全体へのアクセス権は要求しません。</li>
     </ul>
+    <p>権限を拒否しても、権限を必要としない他の機能は利用できます。権限はiOS / iPadOSの設定から変更できます。</p>
 
-    <h2 id="p7">7. ユーザーの選択と管理（削除・権利）</h2>
+    <h2>5. 保存期間と削除</h2>
+    <p>端末内データは、利用者がアプリ内で削除するか、アプリを削除するまで保持されます。Filesへ保存した文書と隣接する「文書名-assets」フォルダは、アプリを削除しても残る場合があり、Filesで個別に削除してください。重要な文書はassetsフォルダと一緒に任意の場所へバックアップしてください。</p>
+
+    <h2>6. 子どものプライバシー</h2>
+    <p>Note.mdは子どもから個人情報を意図的に収集しません。</p>
+
+    <h2>7. 変更と問い合わせ</h2>
+    <p>機能や法令の変更に応じて本ポリシーを更新する場合があります。重要な変更は、このページまたはアプリの更新情報で案内します。</p>
+    <p>問い合わせ: <a href="mailto:flickcounter@gmail.com">flickcounter@gmail.com</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>Note.md Privacy Policy</h1>
+    <p class="meta">Effective and last updated: July 22, 2026</p>
+    <p>Note.md is an iPhone and iPad app that keeps Markdown, text, and user-selected images and videos centered on your device. No account is required. Documents, images, videos, recordings, transcripts, and document notes are not sent to the developer’s servers or to an external analysis service.</p>
+
+    <h2>1. Data handled by the app</h2>
+    <table>
+      <tr><th>Documents</th><td>Handled in the Files location you choose or in the app’s on-device storage.</td></tr>
+      <tr><th>Images and videos</th><td>The system Photos picker exposes only the items you select. Note.md copies them into a <code>&lt;document name&gt;-assets</code> folder beside the Markdown file without requesting full Photo Library access. Local videos play in the app.</td></tr>
+      <tr><th>Inbox, reading lists, document notes, and settings</th><td>Stored on device or in an App Group container used only by the host app and its Share extension.</td></tr>
+      <tr><th>Recordings and transcripts</th><td>Stored in the app’s on-device storage. Transcription uses supported Apple on-device frameworks.</td></tr>
+      <tr><th>Pro entitlement</th><td>Purchases and restores are checked through Apple StoreKit, and the entitlement state is cached on device. Apple processes payment information.</td></tr>
+    </table>
+
+    <h2>2. Collection, tracking, and advertising</h2>
+    <p>Note.md contains no advertising, third-party analytics, or behavioral tracking SDKs. The developer does not collect personal information, document content, images, videos, recordings, transcripts, or usage history through the app. Data is not sold to third parties.</p>
+
+    <h2>3. When a network connection may be used</h2>
     <ul>
-      <li>保存先（Files / iCloud Drive 等）のデータは、ユーザーが保存先側で削除・移動・管理できます。</li>
-      <li>端末内に保存されるセッション情報・設定情報等は、アプリのアンインストール（削除）で削除されます。</li>
-      <li>外部画像や外部リンクの通信は、Markdown内容から当該URLを削除することで抑制できます。</li>
+      <li>StoreKit communicates with Apple for Pro product information, purchases, and restores.</li>
+      <li>Apple may download a selected-language model when recording or transcription is first used.</li>
+      <li>If an image or video exists only in iCloud Photos, the system Photos picker may retrieve it from Apple’s service. The developer does not receive that network traffic.</li>
+      <li>Markdown Preview does not load web images or video thumbnails automatically, and it does not embed web videos such as YouTube in the app. When you explicitly open a link, Note.md switches to an external app such as YouTube or to Safari, which then contacts the destination.</li>
+      <li>If you send a support email, your email provider and the developer receive what you choose to send. The app does not send it automatically.</li>
     </ul>
+    <p class="note">Apple and destination websites process data under their own privacy policies.</p>
 
-    <h2 id="p8">8. 安全管理措置</h2>
-    <p>
-      運営者は、端末内データの保護について、iOSのサンドボックス等のプラットフォーム標準のセキュリティ機構を前提に設計しています。
-      ただし、あらゆる脅威からの完全な安全を保証するものではありません。重要なデータは、ユーザー自身でバックアップ等を行ってください。
-    </p>
+    <h2>4. Permissions</h2>
+    <ul>
+      <li><strong>Microphone:</strong> used for recording.</li>
+      <li><strong>Speech recognition:</strong> used for transcription on supported systems.</li>
+      <li><strong>Files:</strong> used to open and save documents or folders you choose.</li>
+      <li><strong>Photos picker:</strong> used to import only the images and videos you explicitly select. Note.md does not request access to the full Photo Library.</li>
+    </ul>
+    <p>Declining a permission does not prevent use of features that do not require it. Permissions can be changed in iOS or iPadOS Settings.</p>
 
-    <h2 id="p9">9. 未成年者の情報</h2>
-    <p>
-      未成年者は、親権者その他の法定代理人の同意を得たうえで本アプリを利用してください。
-    </p>
+    <h2>5. Retention and deletion</h2>
+    <p>On-device app data remains until you delete it in the app or remove the app. Documents and adjacent <code>&lt;document name&gt;-assets</code> folders saved in Files may remain after uninstalling and must be deleted separately in Files. Back up important documents together with their assets folders to a location you control.</p>
 
-    <h2 id="p10">10. 改定</h2>
-    <p>
-      運営者は、必要に応じて本ポリシーを改定できます。改定後の内容は、運営者が適切と判断する方法（例：Web掲載）により周知します。
-    </p>
+    <h2>6. Children’s privacy</h2>
+    <p>Note.md does not knowingly collect personal information from children.</p>
 
-    <h2 id="p11">11. お問い合わせ</h2>
-    <p>
-      本ポリシーに関するお問い合わせは、上記の窓口までご連絡ください。<br />
-    </p>
-
-    <div class="card small">
-      <strong>公開前チェック（推奨）</strong>
-      <ul>
-        <li>運営者名・連絡先を実在のものに差し替えたか</li>
-        <li>課金（IAP/サブスク）や解析SDKを導入予定なら、その内容を追記したか</li>
-        <li>App Store Connect の「プライバシー」申告内容と整合しているか</li>
-      </ul>
-    </div>
-  </main>
-
-  <footer>
-    <div>©noa</div>
-  </footer>
+    <h2>7. Changes and contact</h2>
+    <p>This policy may be updated as features or legal requirements change. Material changes will be described on this page or in app update information.</p>
+    <p>Contact: <a href="mailto:flickcounter@gmail.com">flickcounter@gmail.com</a></p>
+  </section>
+</article></main>
 </body>
 </html>
